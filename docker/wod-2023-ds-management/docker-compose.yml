@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ds-mgmt:
+    # image: aponamarev/wod-2023-ds-mgmt:latest
+    # environment:
+    #   - DS_MGMT_ADMIN_PASSWORD=passw0rd
+    #   - DS_MGMT_ADMIN_USER=admin
+    #   - DS_MGMT_ADMIN_PORT=4444
+    #   - DS_MGMT_ADMIN_HOST=
+    # env_file: .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ${WOD_DATASET:?define WOD_DATASET env variable}:/dataset
