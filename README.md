@@ -60,11 +60,10 @@ Using devcontainer can help ensure that your development environment is consiste
 Before you can start working with the Waymo Open Dataset, you'll need to download it to your local machine. Here's how to do it:
 
 1. Initialize gcloud by running the following command and following the prompts:
-
-```bashscript
-gcloud init
-```
-This will open a web page where you can sign in to your GCP account and grant `gcloud` permission to access your resources.
+    ```bashscript
+    gcloud init
+    ```
+    This will open a web page where you can sign in to your GCP account and grant `gcloud` permission to access your resources.
 1. Set the default project for gcloud by running the following command and replacing PROJECT_ID with the ID of the GCP project you want to use:
     ```bashscript
     gcloud config set project PROJECT_ID
