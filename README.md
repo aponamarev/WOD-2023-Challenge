@@ -70,7 +70,7 @@ Before you can start working with the Waymo Open Dataset, you'll need to downloa
     ```
 1. Use the provided scripts to download and extract the Waymo Open Dataset. For example, to download the training set, run the following command:
     ```
-    ./scripts/download_training.sh /path/to/download/directory
+    ./utils/download_test.sh /path/to/download/directory
     ```
 This will download the training set to the specified directory.
 
